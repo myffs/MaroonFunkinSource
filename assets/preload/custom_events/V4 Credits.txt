@@ -1,0 +1,9 @@
+If you want the credits to show up again
+Replace the two lines of the credits. Insert ";" to
+seperate a value.
+Value 1: "Song Name;Composer: Name"
+Example: "Bopeebo;Composer: Kawai Sprite"
+
+Value 2: "objWidth;objHeight" (objHeight is Optional)
+Change the size of the credits box.
+Example: "250;87" or "250"
