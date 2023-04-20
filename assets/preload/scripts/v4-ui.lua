@@ -16,7 +16,7 @@ function onCreatePost()
 		setProperty("showComboNum", false)
 		setProperty("showRating", false)
 	end
-	setTextString("botplayTxt", "Be_Impostor.exe")
+	setTextString("botplayTxt", "BOTPLAY")
 	if downScroll then
 		setProperty("botplayTxt.y", getProperty("healthBar.y")+40)
 	else
