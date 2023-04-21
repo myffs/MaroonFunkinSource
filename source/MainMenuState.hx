@@ -97,7 +97,11 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var menuItem:FlxSprite = new FlxSprite(i * 500, 130);
+			// var menuItem:FlxSprite = new FlxSprite(FlxG.width * i * Math.floor(1000), 475);
+			// var menuItem:FlxSprite = new FlxSprite(FlxG.width * 1.6, 475);
+			// menuItem.x = FlxG.width / 2 - 350 + (i * 160);
+			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var menuItem:FlxSprite = new FlxSprite(0, (i * 140) + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
@@ -105,12 +109,12 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			// menuItem.screenCenter(X);
-			menuItem.scale.set(0.50, 0.50);
+			menuItem.screenCenter(X);
+			// menuItem.scale.set(0.50, 0.50);
 			menuItem.updateHitbox();
 			menuItem.scrollFactor.set();
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
+			menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 
 			/*
 			switch(i) {
