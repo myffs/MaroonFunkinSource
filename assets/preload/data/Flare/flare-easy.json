@@ -3980,7 +3980,7 @@
 		"stage": "stage",
 		"arrowSkin": "",
 		"needsVoices": true,
-		"speed": 3.3,
+		"speed": 1.0,
 		"bpm": 189
 	}
 }
