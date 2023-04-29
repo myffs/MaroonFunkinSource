@@ -704,7 +704,7 @@ class TitleState extends MusicBeatState
 				if (easteregg == null) easteregg = '';
 				easteregg = easteregg.toUpperCase();
 
-				var sound:FlxSound = null;
+				/*var sound:FlxSound = null;
 				switch(easteregg)
 				{
 					case 'RIVER':
@@ -714,7 +714,7 @@ class TitleState extends MusicBeatState
 					case 'SHADOW':
 						FlxG.sound.play(Paths.sound('JingleShadow'));
 					case 'BBPANZU':
-						sound = FlxG.sound.play(Paths.sound('JingleBB'));
+						sound = FlxG.sound.play(Paths.sound('JingleBB'));*/
 
 					default: //Go back to normal ugly ass boring GF
 						remove(ngSpr);
